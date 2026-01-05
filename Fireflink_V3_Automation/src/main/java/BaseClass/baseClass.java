@@ -35,11 +35,14 @@ public WebDriver driver = null;
 	
 	@BeforeClass
 	public void launchBrowser() throws IOException {
-		 String BROWSER = putil.toReadDataFromPropertyFile("browser");
-		 System.out.println("<==============Launching to Browser=============>");
+		
+		String BROWSER = putil.toReadDataFromPropertyFile("browser");
+		System.out.println("<==============Launching to Browser=============>");
 		 
-		 ChromeOptions options = new ChromeOptions();
+		// To handle Google Password Protection Password 👇
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
+		
 		Map<String, Object> prefs = new HashMap();
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
