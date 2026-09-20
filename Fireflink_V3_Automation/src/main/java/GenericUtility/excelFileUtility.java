@@ -3,8 +3,6 @@ package GenericUtility;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Date;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -35,15 +33,17 @@ public class excelFileUtility {
 	/*
 	 * 
 	 */
-	public String toReturnDatatoExcel(String sheetName, int row, int cell, Date data ) throws EncryptedDocumentException, IOException {
+	public String toReturnDatatoExcel(String sheetName, int row, int cell, String data ) throws EncryptedDocumentException, IOException {
 		
 		FileInputStream fis = new FileInputStream("./src/test/resources/testData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		wb.getSheet(sheetName).createRow(row).createCell(cell, CellType.STRING).setCellValue(data);
 		FileOutputStream fos = new FileOutputStream("./src/test/resources/testData.xlsx");
 		wb.write(fos);
+		fos.close();
+	    wb.close();
+	    fis.close();
 		return sheetName;
-		
 	}
 
 }

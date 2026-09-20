@@ -2,56 +2,54 @@
 <testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-11T13:11:59 IST" name="testing" finished-at="2026-08-11T13:12:36 IST" duration-ms="36991">
+  <suite started-at="2026-08-11T13:26:07 IST" name="testing" finished-at="2026-08-11T13:28:11 IST" duration-ms="123304">
     <groups>
     </groups>
-    <test started-at="2026-08-11T13:11:59 IST" name="Test" finished-at="2026-08-11T13:12:36 IST" duration-ms="36991">
+    <test started-at="2026-08-11T13:26:07 IST" name="Test" finished-at="2026-08-11T13:28:11 IST" duration-ms="123304">
       <class name="SignIn.projectCreation">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.projectCreation@7817fd62]" started-at="2026-08-11T13:12:24 IST" name="launchBrowser" finished-at="2026-08-11T13:12:30 IST" duration-ms="6017" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.projectCreation@45c7e403]" started-at="2026-08-11T13:27:16 IST" name="launchBrowser" finished-at="2026-08-11T13:27:21 IST" duration-ms="5829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="CreateWebserviceProject()[pri:0, instance:SignIn.projectCreation@7817fd62]" started-at="2026-08-11T13:12:30 IST" name="CreateWebserviceProject" finished-at="2026-08-11T13:12:36 IST" duration-ms="5942" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="CreateWebserviceProject()[pri:0, instance:SignIn.projectCreation@45c7e403]" started-at="2026-08-11T13:27:21 IST" name="CreateWebserviceProject" finished-at="2026-08-11T13:28:10 IST" duration-ms="48898" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Licenses']"}
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d59829af7673971150dcb4f260e0936a, clickElement {id=f.2FEA5C09B9B1B4D9C682B447B4A9D061.d.24B3D037DE5EFE6CF889B629B7185EB5.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53318}, goog:processID: 21244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53318/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d59829af7673971150dcb4f260e0936a)] -> xpath: //button[@type='submit']]
-Session ID: d59829af7673971150dcb4f260e0936a]]>
+Command: [49c6b4ce5cd48f277e817a36de14dd9c, findElement {value=//div[text()='Licenses'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50414}, goog:processID: 63288, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50414/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49c6b4ce5cd48f277e817a36de14dd9c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Licenses']"}
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d59829af7673971150dcb4f260e0936a, clickElement {id=f.2FEA5C09B9B1B4D9C682B447B4A9D061.d.24B3D037DE5EFE6CF889B629B7185EB5.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53318}, goog:processID: 21244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53318/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d59829af7673971150dcb4f260e0936a)] -> xpath: //button[@type='submit']]
-Session ID: d59829af7673971150dcb4f260e0936a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+Command: [49c6b4ce5cd48f277e817a36de14dd9c, findElement {value=//div[text()='Licenses'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50414}, goog:processID: 63288, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50414/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49c6b4ce5cd48f277e817a36de14dd9c
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at POM.welcomePage.sigInBM(welcomePage.java:59)
-at SignIn.projectCreation.CreateWebserviceProject(projectCreation.java:38)
+at POM.licencePage.changeLicenceToLIC1026510(licencePage.java:105)
+at SignIn.projectCreation.CreateWebserviceProject(projectCreation.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,61 +78,58 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateWebserviceProject -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.projectCreation@7817fd62]" started-at="2026-08-11T13:12:36 IST" name="closeBrowser" finished-at="2026-08-11T13:12:36 IST" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.projectCreation@45c7e403]" started-at="2026-08-11T13:28:10 IST" name="closeBrowser" finished-at="2026-08-11T13:28:11 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- SignIn.projectCreation -->
       <class name="SignIn.licenseChange">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.licenseChange@510f3d34]" started-at="2026-08-11T13:12:12 IST" name="launchBrowser" finished-at="2026-08-11T13:12:18 IST" duration-ms="5898" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.licenseChange@b3ca52e]" started-at="2026-08-11T13:26:21 IST" name="launchBrowser" finished-at="2026-08-11T13:26:26 IST" duration-ms="5483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="changeLicenseTo26441()[pri:0, instance:SignIn.licenseChange@510f3d34]" started-at="2026-08-11T13:12:18 IST" name="changeLicenseTo26441" finished-at="2026-08-11T13:12:24 IST" duration-ms="5474" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="changeLicenseTo26441()[pri:0, instance:SignIn.licenseChange@b3ca52e]" started-at="2026-08-11T13:26:26 IST" name="changeLicenseTo26441" finished-at="2026-08-11T13:27:15 IST" duration-ms="49081" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Licenses']"}
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12a6ed84d11c666b67e011b36334e713, clickElement {id=f.B3E4F9751C2DA6A57BFA443566D8BBD3.d.E6C25E8EA5C7361077FE70DD640A0DFD.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59020}, goog:processID: 1896, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59020/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (12a6ed84d11c666b67e011b36334e713)] -> xpath: //button[@type='submit']]
-Session ID: 12a6ed84d11c666b67e011b36334e713]]>
+Command: [400f28c7613f127d3f664210cd1b14a2, findElement {value=//div[text()='Licenses'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63475}, goog:processID: 68960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63475/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 400f28c7613f127d3f664210cd1b14a2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Licenses']"}
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12a6ed84d11c666b67e011b36334e713, clickElement {id=f.B3E4F9751C2DA6A57BFA443566D8BBD3.d.E6C25E8EA5C7361077FE70DD640A0DFD.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59020}, goog:processID: 1896, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59020/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (12a6ed84d11c666b67e011b36334e713)] -> xpath: //button[@type='submit']]
-Session ID: 12a6ed84d11c666b67e011b36334e713
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+Command: [400f28c7613f127d3f664210cd1b14a2, findElement {value=//div[text()='Licenses'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63475}, goog:processID: 68960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63475/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 400f28c7613f127d3f664210cd1b14a2
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at POM.welcomePage.sigInBM(welcomePage.java:59)
-at SignIn.licenseChange.changeLicenseTo26441(licenseChange.java:26)
+at SignIn.licenseChange.changeLicenseTo26441(licenseChange.java:27)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -163,59 +158,56 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeLicenseTo26441 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.licenseChange@510f3d34]" started-at="2026-08-11T13:12:24 IST" name="closeBrowser" finished-at="2026-08-11T13:12:24 IST" duration-ms="329" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.licenseChange@b3ca52e]" started-at="2026-08-11T13:27:15 IST" name="closeBrowser" finished-at="2026-08-11T13:27:16 IST" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- SignIn.licenseChange -->
       <class name="SignIn.signIn">
-        <test-method is-config="true" signature="StartingDBconnection()[pri:0, instance:SignIn.signIn@2925bf5b]" started-at="2026-08-11T13:11:59 IST" name="StartingDBconnection" finished-at="2026-08-11T13:11:59 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="StartingDBconnection()[pri:0, instance:SignIn.signIn@2aceadd4]" started-at="2026-08-11T13:26:07 IST" name="StartingDBconnection" finished-at="2026-08-11T13:26:07 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartingDBconnection -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.signIn@2925bf5b]" started-at="2026-08-11T13:11:59 IST" name="launchBrowser" finished-at="2026-08-11T13:12:06 IST" duration-ms="7086" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SignIn.signIn@2aceadd4]" started-at="2026-08-11T13:26:07 IST" name="launchBrowser" finished-at="2026-08-11T13:26:14 IST" duration-ms="6958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="signingIn()[pri:0, instance:SignIn.signIn@2925bf5b]" started-at="2026-08-11T13:12:06 IST" name="signingIn" finished-at="2026-08-11T13:12:12 IST" duration-ms="5530" status="FAIL">
+        <test-method signature="signingIn()[pri:0, instance:SignIn.signIn@2aceadd4]" started-at="2026-08-11T13:26:14 IST" name="signingIn" finished-at="2026-08-11T13:26:20 IST" duration-ms="5786" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5f83e9e5066e7ac621fb0032b29276b0, clickElement {id=f.68895DF6170F2ED58714B96826B073DF.d.FBACB8DB40FB6BDF0DBF69820CB2D1AF.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63723}, goog:processID: 70716, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63723/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5f83e9e5066e7ac621fb0032b29276b0)] -> xpath: //button[@type='submit']]
-Session ID: 5f83e9e5066e7ac621fb0032b29276b0]]>
+Command: [bffc8565f906e5b6c1c0ca7505c29302, clickElement {id=f.6F9E5B6B02240E001462CAD57587554D.d.D353FAE3E5CFECA4B33A91770D43DA62.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, goog:processID: 43656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bffc8565f906e5b6c1c0ca7505c29302)] -> xpath: //button[@type='submit']]
+Session ID: bffc8565f906e5b6c1c0ca7505c29302]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="ff-button ff-button--small ff-button--primary" aria-label="Button" aria-disabled="false" style="width: 175px; height: 28px;">...</button> is not clickable at point (960, 373). Other element would receive the click: <div id="loader" style="display: flex;">...</div>
   (Session info: chrome=151.0.7922.72)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5f83e9e5066e7ac621fb0032b29276b0, clickElement {id=f.68895DF6170F2ED58714B96826B073DF.d.FBACB8DB40FB6BDF0DBF69820CB2D1AF.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63723}, goog:processID: 70716, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63723/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5f83e9e5066e7ac621fb0032b29276b0)] -> xpath: //button[@type='submit']]
-Session ID: 5f83e9e5066e7ac621fb0032b29276b0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+Command: [bffc8565f906e5b6c1c0ca7505c29302, clickElement {id=f.6F9E5B6B02240E001462CAD57587554D.d.D353FAE3E5CFECA4B33A91770D43DA62.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.72, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, goog:processID: 43656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 151.0.7922.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bffc8565f906e5b6c1c0ca7505c29302)] -> xpath: //button[@type='submit']]
+Session ID: bffc8565f906e5b6c1c0ca7505c29302
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
@@ -253,11 +245,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signingIn -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.signIn@2925bf5b]" started-at="2026-08-11T13:12:12 IST" name="closeBrowser" finished-at="2026-08-11T13:12:12 IST" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SignIn.signIn@2aceadd4]" started-at="2026-08-11T13:26:20 IST" name="closeBrowser" finished-at="2026-08-11T13:26:21 IST" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="ClosingDBconnection()[pri:0, instance:SignIn.signIn@2925bf5b]" started-at="2026-08-11T13:12:36 IST" name="ClosingDBconnection" finished-at="2026-08-11T13:12:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="ClosingDBconnection()[pri:0, instance:SignIn.signIn@2aceadd4]" started-at="2026-08-11T13:28:11 IST" name="ClosingDBconnection" finished-at="2026-08-11T13:28:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClosingDBconnection -->

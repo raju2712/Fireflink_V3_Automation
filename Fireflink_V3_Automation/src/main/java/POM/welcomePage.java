@@ -1,10 +1,14 @@
 package POM;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import GenericUtility.propertyFileUtility;
 
@@ -53,6 +57,13 @@ public class welcomePage {
 			propertyFileUtility putil = new propertyFileUtility();
 			String EMAIL = putil.toReadDataFromPropertyFile("email");
 			String PASSWORD = putil.toReadDataFromPropertyFile("password");
+			
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(
+			        By.id("loader")));
+
+			wait.until(ExpectedConditions.elementToBeClickable(getSignInBtn()));
 			
 			getUsernameTF().sendKeys(EMAIL);
 			getPasswordTF().sendKeys(PASSWORD);

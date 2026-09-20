@@ -104,7 +104,7 @@ public class webDriverUtility {
 		driver.switchTo().frame(id);
 	}
 	
-	public void returnToPrevioudFrame(WebDriver driver) {
+	public void returnToPreviousFrame(WebDriver driver) {
 		driver.switchTo().defaultContent();
 	}
 	
@@ -159,7 +159,6 @@ public class webDriverUtility {
 	}
 	
 	public void screenshotOfElement(WebDriver driver, String screenshotName, String xpathOfElement) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot)driver;
 	    File temp = driver.findElement(By.xpath(xpathOfElement)).getScreenshotAs(OutputType.FILE);
 	    File src = new File("./errorShots/"+screenshotName+".jpeg");
 	    FileHandler.copy(temp, src);
